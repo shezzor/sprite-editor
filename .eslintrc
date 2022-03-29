@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "impliedStrict": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "@typescript-eslint/indent": ["error", 2],
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"],
+    "max-len": [
+      2,
+      {
+        "code": 150,
+        "tabWidth": 2,
+        "ignoreStrings": true
+      }
+    ],
+    "comma-dangle": ["error", "always-multiline"],
+    "space-in-parens": "error",
+    "space-before-blocks": "error",
+    "array-element-newline": [
+      "error",
+      "consistent"
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "export"
+      }
+    ]
+  }
+}
