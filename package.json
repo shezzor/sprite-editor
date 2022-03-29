@@ -1,0 +1,47 @@
+{
+  "name": "sprite-editor",
+  "version": "0.1.0",
+  "author": "Anthony Sherratt <contact@anthonysherratt.co.uk>",
+  "description": "Sprite editor for engine file format",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "sprite",
+    "editor",
+    "game"
+  ],
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "format": "eslint --fix \"src/**/*.js\"",
+    "lint": "eslint --fix-dry-run \"src/**/*.js\""
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "endOfLine": "crlf",
+    "jsxBracketSameLine": false,
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.14.0",
+    "@typescript-eslint/parser": "5.14.0",
+    "esbuild": "0.14.25",
+    "eslint": "8.11.0",
+    "prettier": "2.5.1",
+    "vite": "^2.8.6",
+    "vite-plugin-solid": "^2.2.6",
+    "vite-tsconfig-paths": "3.4.1",
+    "typescript": "4.6.2"
+  },
+  "dependencies": {
+    "solid-js": "1.3.13"
+  }
+}

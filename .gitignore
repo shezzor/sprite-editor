@@ -1,0 +1,6 @@
+# dev environment
+.vscode
+node_modules
+
+# prod
+dist
