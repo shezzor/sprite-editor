@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite';
-import solidPlugin from 'vite-plugin-solid';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import preact from '@preact/preset-vite';
 
 export default defineConfig({
   build: {
     target: 'esnext',
-    polyfillDynamicImport: false,
     sourcemap: true,
+    outDir: 'public/dist',
   },
-  plugins: [solidPlugin(), tsconfigPaths()],
+  plugins: [preact()],
 });
