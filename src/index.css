@@ -1,0 +1,85 @@
+:root {
+  --sdc-color-background: #444;
+  --sdc-color-text: #fff;
+
+  --sdc-color-primary-100: #ff9800;
+  --sdc-color-primary-200: #ffa333;
+  --sdc-color-primary-300: #ffaf50;
+  --sdc-color-primary-400: #ffba6a;
+  --sdc-color-primary-500: #ffc683;
+  --sdc-color-primary-600: #ffd19b;
+
+	--sdc-color-surface-100: #1a1a24;
+	--sdc-color-surface-200: #2f2f39;
+	--sdc-color-surface-300: #46454e;
+	--sdc-color-surface-400: #5d5d65;
+	--sdc-color-surface-500: #76767d;
+	--sdc-color-surface-600: #909096;
+
+	--sdc-sizing-ratio: 1.5;
+	--sdc-sizing-xs: calc(var(--sdc-sizing-s) / var(--sdc-sizing-ratio));
+	--sdc-sizing-s: calc(var(--sdc-sizing-b) / var(--sdc-sizing-ratio));
+	--sdc-sizing-b: 1rem;
+	--sdc-sizing-l: calc(var(--sdc-sizing-b) * var(--sdc-sizing-ratio));
+	--sdc-sizing-xl: calc(var(--sdc-sizing-l) * var(--sdc-sizing-ratio));
+
+	--sdc-color-background-window: #313131;
+	--sdc-color-background-window-border: #555;
+	--sdc-color-frame-stroke: rgb(0 114 255 / 50%);
+	--sdc-color-frame-fill: rgb(0 90 255 / 25%);
+
+	--sdc-font-size-ratio: 1.25;
+	--sdc-font-size-xs: calc(var(--sdc-font-size-s) / var(--sdc-font-size-ratio));
+	--sdc-font-size-s: calc(var(--sdc-font-size-b) / var(--sdc-font-size-ratio));
+	--sdc-font-size-b: 1rem;
+	--sdc-font-size-l: calc(var(--sdc-font-size-b) * var(--sdc-font-size-ratio));
+	--sdc-font-size-xl: calc(var(--sdc-font-size-l) * var(--sdc-font-size-ratio));
+
+	--sdc-layer-panel: 99;
+}
+
+html,
+body,
+#root {
+  padding: 0;
+  margin: 0;
+	width: 100%;
+  height: 100%;
+	overflow: hidden;
+}
+
+body,
+button,
+input {
+  margin: 0;
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img {
+	display: none;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+}
+
+@supports (image-rendering: pixelated) {
+  canvas {
+    image-rendering: pixelated;
+  }
+}
+
+@supports (image-rendering: crisp-edges) {
+  canvas {
+    image-rendering: crisp-edges;
+  }
+}

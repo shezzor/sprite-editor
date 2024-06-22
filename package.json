@@ -1,11 +1,18 @@
 {
 	"name": "@shezzor/sprite-editor",
 	"version": "0.1.0",
-	"author": "Anthony Sherratt <contact@anthonysherratt.co.uk>",
 	"description": "Sprite editor for engine file format",
+	"author": {
+		"name": "Anthony Sherratt",
+		"url": "http://anthonysherratt.co.uk"
+	},
+	"funding": {
+		"type": "patreon",
+		"url": "https://www.patreon.com/shezzor"
+	},
 	"private": true,
 	"type": "module",
-	"main": "index.js",
+	"main": "./src/index.tsx",
 	"license": "MIT",
 	"keywords": [
 		"sprite",
@@ -13,23 +20,22 @@
 		"game"
 	],
 	"scripts": {
-		"start": "vite",
-		"build": "vite build",
-		"serve": "vite preview",
-		"format": "eslint --fix \"src/**/*.js\"",
-		"lint": "eslint --fix-dry-run \"src/**/*.js\""
+		"build": "node ./esbuild.config.js",
+		"watch": "tsc -w",
+		"format": "eslint --fix \"src/**/*.{js,ts}\"",
+		"lint": "eslint --fix-dry-run \"src/**/*.{js,ts}\""
 	},
 	"devDependencies": {
-		"@preact/preset-vite": "2.8.2",
-		"@typescript-eslint/eslint-plugin": "7.11.0",
-		"@typescript-eslint/parser": "7.11.0",
-		"esbuild": "0.21.4",
+		"@typescript-eslint/eslint-plugin": "7.13.1",
+		"@typescript-eslint/parser": "7.13.1",
+		"esbuild": "0.21.5",
 		"eslint": "8.57.0",
-		"typescript": "5.4.5",
-		"vite": "5.2.12",
-		"vite-tsconfig-paths": "4.3.2"
+		"eslint-import-resolver-typescript": "3.6.1",
+		"eslint-plugin-import": "2.29.1",
+		"eslint-config-preact": "1.4.0",
+		"typescript": "5.5.2"
 	},
 	"dependencies": {
-		"preact": "10.16.0"
+		"preact": "10.22.0"
 	}
 }

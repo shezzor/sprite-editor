@@ -8,18 +8,14 @@
 		"esModuleInterop": true,
 		"jsx": "react-jsx",
 		"jsxImportSource": "preact",
-		"baseUrl": "src/",
-		"outDir": "public/dist",
+		"baseUrl": "./src",
+		"outDir": "build",
 		"allowJs": true,
 		"resolveJsonModule": true,
 		"noEmit": true,
 		"isolatedModules": true,
-		"skipLibCheck": true,
-		"paths": {
-			"react": ["./node_modules/preact/compat/"],
-			"react/jsx-runtime": ["./node_modules/preact/jsx-runtime"],
-			"react-dom": ["./node_modules/preact/compat/"],
-			"react-dom/*": ["./node_modules/preact/compat/*"]
-		}
-	}
+		"skipLibCheck": true
+	},
+	"include": ["src/**/*.tsx", "src/**/*.ts"],
+	"exclude": ["./node_modules"]
 }
